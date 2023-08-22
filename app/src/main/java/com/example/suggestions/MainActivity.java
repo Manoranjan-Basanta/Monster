@@ -1,5 +1,7 @@
 package com.example.suggestions;
 import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -49,6 +51,11 @@ public class MainActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        getData();
+    }
+
+    public void getData(){
+        Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
     }
 }
 
